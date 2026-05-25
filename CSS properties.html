@@ -5,7 +5,8 @@
 body{
    background-image:url("DS.jpg");
    background-repeat:no-repeat;   
-   background-size:cover;         
+   background-size:cover; 
+   position: relative;        
 }
 h1{
   color:#ffffff;
@@ -16,8 +17,25 @@ h1{
 h3{
   color:#ffffff;
   font-family:Inter;
+  text-align:left;
   margin:50px;
   font-size:200%;
+}
+h2{
+  padding:2px;
+  margin:5px;
+  font-size:150%;
+}
+h5{
+  text-decoration: underline; 
+  color:black;
+}
+div{
+  border:13px solid white;
+  margin-top:10px;
+  margin-right:870px;
+  margin-bottom:50px;
+  margin-left:50px;  
 }
 ul{
   color:#ffffff;
@@ -25,7 +43,7 @@ ul{
   margin:50px;
   font-size:150%;
 }
-button{
+button1{
   background-color:violet;
   color:black;
   font-family:Inter;
@@ -33,21 +51,52 @@ button{
   text-align:center;
   font-size:15px;
   margin:50px;
-  display: inline-block;
   border-radius:10px;
 }
-button:hover{
+button1:hover{
   background-color:white;
+}
+.signup{
+   width:300px;
+   padding:20px;
+   background:white;
+   position:absolute;
+   margin-top:-370px;
+   margin-right:-700px;
+   margin-bottom:400px;
+   margin-left:700px; 
+}
+button2{  
+  background-color:violet;
+  color:black;
+  padding:10px;
+  text-align:center;
+  font-size:15px;
+  margin:50px;
+  border-radius:10px;
+}
+.container {
+  background-color:white;
+}
+
+.container div {
+  background-color: lightgrey;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;  
+  font-size: 20px;
 }
 </style>
 </head>
 <body>
 <h1>
-  Welcome to DataScience Department
+  Welcome to DataScience World
 </h1>
 <h3>
   Data Science Course Features
 </h3>
+<div>
 <ul>
   <li>Programming for Data Science</li>
   <li>Statistics and Probability</li>
@@ -55,10 +104,23 @@ button:hover{
   <li>Machine Learning</li>
   <li>Data Analysis</li>
 </ul>
-<button>Learn more</button>
+</div>
+<button1>Learn more</button1><br><br>
+<center>
+<div class="signup">
+  <h2>Sign up for free courses</h2><br>
+  <input type="text" placeholder="Name"><br><br>
+  <input type="text" placeholder="Mobile number"><br><br>
+  <input type="text" placeholder="Enter OTP"><br><br><br>
+<button2>Submit</button2>
+</div>
+<div class="container">
+  <h2> Free courses </h2>
+  <div> Applied Data Science with python </div>
+  <div> Introduction to python </div>
+  <div> Introduction to ML </div>
+  <div> Cloud Architect Masters Program </div>
+</div>
+</center>
 </body>
 </html>
-
-
-  
-
